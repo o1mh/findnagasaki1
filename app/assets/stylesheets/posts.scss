@@ -1,0 +1,169 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.m{
+    text-align: center;
+    
+  }
+
+
+  .top{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+.setsumei{
+    text-align: center;
+    margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.look{
+    text-align: center;
+    margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.enjoy{
+    text-align: center;
+    margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.h1{
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+
+
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slide-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slider-1 24s linear infinite;
+}
+
+.slide-image:nth-child(1) {
+  background-image: url(01.jpeg);
+  animation-delay: -2s;
+}
+
+.slide-image:nth-child(2) {
+  background-image: url(hasami.jpeg);
+  animation-delay: 6s;
+}
+
+.slide-image:nth-child(3) {
+  background-image: url(03.jpeg);
+  animation-delay: 14s;
+}
+
+@keyframes slider-1 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  4.16% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  41.66% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.toukou{
+  margin-top: 100px;
+      margin-bottom: 30px;
+}
+
+
+.burger{
+    margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left:20px;
+  }
+
+.china{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left:20px;
+}
+
+.hirado{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left:20px;
+}
+
+.guraba{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left:20px;
+}
+
+.unzen{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left:20px;
+}
+
+.dejima{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left:20px;
+}
+
+.huis{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left:20px;
+}
+
+
+.img {
+  width:  50px;
+  height: 50px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.post1{
+  display: flex;
+}
+
+.usagi{
+  margin: 0px 50px;
+}

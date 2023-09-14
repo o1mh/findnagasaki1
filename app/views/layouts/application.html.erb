@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nagasaki</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="https://kit.fontawesome.com/dfb1c55515.js" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="wrapper">
+    <header>
+      <h1><%= link_to "Find Nagasaki", posts_top_path %></h1>
+      <div class="header-list">
+
+      <ul>
+      <% if user_signed_in? %>
+      <li><%= link_to "マイページ",user_path(current_user.id) %></li>
+      <% else %>
+      <li><%= link_to "ログイン",new_user_session_path %></li>
+<% end %>
+        
+        <li><%= link_to "食", posts_food_path %></li>
+        <li><%= link_to "見る", posts_look_path %></li>
+        <li><%= link_to "楽しむ", posts_enjoy_path %></li>
+        <li><%= link_to "投稿を見る", posts_path %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <% end %>
+        
+      </ul>
+      </div>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <div class="push"></div>
+    <footer>
+     <small>© 2020 ○○○○</small>
+  </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
+

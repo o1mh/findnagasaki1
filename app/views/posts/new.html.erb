@@ -1,0 +1,28 @@
+
+<%= form_for @post do |f| %>
+  <div class="top">
+  <h3>新規投稿ページ</h3>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :場所 %>
+    <%= f.text_field :place, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :住所 %>
+    <%= f.text_field :address, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+<div class="m">
+  <%= f.submit "投稿する" %>
+  </div>
+  <% end %>
+  
+  <%= link_to "一覧に戻る", posts_path %>
