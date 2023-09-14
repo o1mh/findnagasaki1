@@ -1,22 +1,27 @@
+<div class="mypage">
 <h1>MY PAGE</h1>
-<p>name : <%= @user.name %></p>
+
 <img src=<%= @user.image %> class = "img", width: '50%', height: '50%' >
-<p>email : <%= @user.email %></p>
+<p>name : <%= @user.name %></p>
+
 <p>profile : <%= @user.profile %></p>
 
 
 <% if current_user.id == @user.id %>
   <%= link_to "編集する", edit_user_registration_path %>
 <% end %>
+</div>
 
-<h2>ユーザーの投稿一覧</h2>
+
+<h2>投稿一覧</h2>
 <% @user.posts.each do |t| %>
   <%= t.user.name %>
   <%= t.place %>
+  
   <%= image_tag t.image_url, size: "250x200" if t.image? %>
 <% end %>
 
-<h2>ユーザーがいいねした投稿一覧</h2>
+<h2>いいねした投稿</h2>
 <% @user.liked_posts.each do |t| %>
   <%= t.user.name %>
   <%= t.place %>
