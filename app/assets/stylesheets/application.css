@@ -40,6 +40,7 @@
     display: flex; /* 中の要素を横並びにする */
     align-items: center; /* 中の要素を上下中央に並べる */
   }
+  
   header a {
     color: black; 
     text-decoration: none; 

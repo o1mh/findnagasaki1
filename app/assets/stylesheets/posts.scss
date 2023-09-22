@@ -54,6 +54,7 @@ body {
   width: 100%;
   height: 700px;
   overflow: hidden;
+  margin-top: 80px;
 }
 
 .slide-image {
@@ -114,6 +115,7 @@ body {
     margin-top: 100px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 
@@ -121,36 +123,42 @@ body {
   margin-top: 60px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 .hirado{
   margin-top: 60px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 .guraba{
   margin-top: 100px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 .unzen{
   margin-top: 60px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 .dejima{
   margin-top: 60px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 .huis{
   margin-top: 100px;
   margin-bottom: 20px;
   margin-left:20px;
+  text-align: center;
 }
 
 
@@ -179,3 +187,6 @@ body {
 }
 
 
+.hr1 {
+  border-top: 5px dotted #deb887;
+}
